@@ -1,4 +1,5 @@
-﻿using System;
+﻿using IronPdf;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,12 +9,11 @@ namespace ParallelProgramming
 {
     public class FileManager
     {
-        internal void ReadFile()
+        public void ReadFile()
         {
-            using (FileStream)
-            {
-
-            }
+            ChromePdfRenderer renderer = new ChromePdfRenderer();
+            PdfDocument pdf = renderer.RenderUrlAsPdf("https://www.wikipedia.org/");
+            pdf.SaveAs("wiki.pdf");
         }
     }
 }

@@ -10,6 +10,21 @@ namespace ParallelProgramming
     {
         static void Main(string[] args)
         {
+            ExecuteTopic(TPL_Topic.Task);
+        }
+
+        static void ExecuteTopic(TPL_Topic topic)
+        {
+            switch (topic)
+            {
+                case TPL_Topic.Task:
+                    {
+
+                    }
+                    break;
+                default:
+                    break;
+            }
         }
     }
 }

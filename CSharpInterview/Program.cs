@@ -3,6 +3,7 @@
 using CSharpInterview.CSharpFeatures;
 using CSharpInterview.CSharpFeatures.Version_9._0;
 using CSharpInterview.Examples;
+using ParallelProgramming;
 using System;
 using System.Linq;
 
@@ -38,7 +39,7 @@ namespace CSharpInterview
 
             #region Parallel
 
-            Examples.Parallel_TPL.Execute(); 
+            //Examples.Parallel_TPL.Execute(); 
 
             #endregion
 
@@ -199,6 +200,12 @@ namespace CSharpInterview
             //LinqExample
             #endregion
 
+            #region Parallel Programming
+
+            FileManager mgr = new FileManager();
+            mgr.ReadFile();
+
+            #endregion
 
             Console.ReadKey();
         }
