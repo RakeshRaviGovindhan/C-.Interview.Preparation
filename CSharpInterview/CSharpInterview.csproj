@@ -6,4 +6,8 @@
     <LangVersion>Preview</LangVersion>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\LinqExample\LinqExample.csproj" />
+  </ItemGroup>
+
 </Project>

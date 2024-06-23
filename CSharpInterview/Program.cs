@@ -38,7 +38,7 @@ namespace CSharpInterview
 
             #region Parallel
 
-            //Examples.Parallel_TPL.Execute(); 
+            Examples.Parallel_TPL.Execute(); 
 
             #endregion
 
@@ -190,9 +190,15 @@ namespace CSharpInterview
 
             #region Parameterized Thread
 
-            ParameterizedThreadClass.Execute();
+            //ParameterizedThreadClass.Execute();
 
             #endregion
+
+            #region Linq Examples
+
+            //LinqExample
+            #endregion
+
 
             Console.ReadKey();
         }

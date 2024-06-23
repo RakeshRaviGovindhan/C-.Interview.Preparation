@@ -1,5 +1,4 @@
-﻿using CSharpInterview.Examples;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,6 +19,7 @@ namespace LinqExample.LinqDemos
             
             //var result = list.Where(x => x.Length > 4).ToList();
             Console.WriteLine(string.Join(',', result));
+            
         }
     }
 
