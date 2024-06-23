@@ -8,5 +8,7 @@ namespace ParallelProgramming
 {
     enum TPL_Topic
     {
+        Task,
+        CancellationTokenSource
     }
 }
