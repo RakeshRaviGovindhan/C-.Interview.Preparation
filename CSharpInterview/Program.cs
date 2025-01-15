@@ -141,9 +141,9 @@ namespace CSharpInterview
 
             #region NullCoalescingOperators  C# 8.0
 
-            //NullCoalescingOperators.EvaluateType1();
-            //NullCoalescingOperators.EvaluateType2();
-            //NullCoalescingOperators.EvaluateType3();
+            NullCoalescingOperators.EvaluateType1();
+            NullCoalescingOperators.EvaluateType2();
+            NullCoalescingOperators.EvaluateType3();
 
             #endregion
 
@@ -202,8 +202,8 @@ namespace CSharpInterview
 
             #region Parallel Programming
 
-            FileManager mgr = new FileManager();
-            mgr.ReadFile();
+            //FileManager mgr = new FileManager();
+            //mgr.ReadFile();
 
             #endregion
 

@@ -13,5 +13,9 @@ namespace DesignPatternsInC_Sharp.SimpleFactoryPattern
         {
             Console.WriteLine("Tigers prefer hunting...\n\n");
         }
+        public IAnimal Clone()
+        {
+            return (IAnimal)this.MemberwiseClone();
+        }
     }
 }

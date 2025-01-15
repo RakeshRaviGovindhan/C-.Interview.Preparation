@@ -12,39 +12,41 @@ namespace SimpleFactory
             Console.WriteLine("*** Simple Factory Pattern Demo***\n\n");
 
             IAnimal preferredType = null;
-            AnimalFactory simpleFactory = new AnimalConcrete();
+            Factory simpleFactory = new AnimalConcrete();
 
-                #region The code region that will vary based on userspreference
+            #region The code region that will vary based on userspreference
 
-                Console.WriteLine("Factory can accept (0 for Dog, 1 for Tiger)\n\n");
-                Console.WriteLine("Creating Dog Animal - 0\n\n");
-                preferredType = simpleFactory.CreateAnimal(0);
+            Console.WriteLine("Factory can accept (DOG for Dog, TIGER for Tiger)\n\n");
+            Console.WriteLine("Creating Dog Animal\n\n");
+            preferredType = simpleFactory.CreateAnimal("DOG");
 
-                #endregion
+            #endregion
 
-                Console.WriteLine("Dog Animal created, you will get Dog Features\n\n");
+            Console.WriteLine("Dog Animal created, you will get Dog Features\n\n");
 
-                #region The codes that do not change frequently
+            #region The codes that do not change frequently
 
-                preferredType.Speak();
-                preferredType.Action();
+            preferredType.Speak();
+            preferredType.Action();
 
-                #endregion
+            #endregion
 
-                Console.WriteLine("Creating Tiger Animal - 1\n\n");
-                preferredType = simpleFactory.CreateAnimal(1);
+            Console.WriteLine("Creating Tiger Animal\n\n");
+            preferredType = simpleFactory.CreateAnimal("TIGER");
 
 
-                Console.WriteLine("Tiger Animal created, you will get Tiger Features\n\n");
+            Console.WriteLine("Tiger Animal created, you will get Tiger Features\n\n");
 
-                #region The codes that do not change frequently
+            #region The codes that do not change frequently
 
-                preferredType.Speak();
-                preferredType.Action();
+            preferredType.Speak();
+            preferredType.Action();
 
-                #endregion
+            #endregion
 
             #endregion
         }
+
+
     }
 }

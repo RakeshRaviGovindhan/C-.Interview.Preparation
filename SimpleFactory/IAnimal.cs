@@ -4,5 +4,6 @@
     {
         void Speak();
         void Action();
+        IAnimal Clone();
     }
 }
