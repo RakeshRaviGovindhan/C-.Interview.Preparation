@@ -1,7 +1,7 @@
 ﻿namespace DesignPatternsInC_Sharp.SimpleFactoryPattern
 {
-    public abstract class AnimalFactory
+    public abstract class Factory
     {
-        public abstract IAnimal CreateAnimal(int selectedAnimal);
+        public abstract IAnimal CreateAnimal(string selectedAnimal);
     }
 }

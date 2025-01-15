@@ -13,5 +13,10 @@ namespace DesignPatternsInC_Sharp.SimpleFactoryPattern
         {
             Console.WriteLine("Dogs prefer barking...\n\n");
         }
+
+        public IAnimal Clone()
+        {
+            return (IAnimal) this.MemberwiseClone();
+        }
     }
 }
